@@ -1,6 +1,6 @@
-# Gender ratios among the Turkish language-specific online communities
+# Latest gender ratios among the top Turkish Kommunities
 
-This projects aims to compare the male-to-female ratio among the language-specific communities in Turkiye.
+This projects aims to compare the male-to-female ratio among the both language and tech specific communities in Turkiye.
 
 ## Extracting member names
 
