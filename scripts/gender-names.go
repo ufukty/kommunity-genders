@@ -9,28 +9,20 @@ import (
 	"flag"
 	"fmt"
 	"io"
-	"log"
 	"os"
+	"path/filepath"
 	"strings"
 	"text/template"
+	"time"
 
 	"github.com/firebase/genkit/go/ai"
 	"github.com/firebase/genkit/go/genkit"
 	"github.com/firebase/genkit/go/plugins/googlegenai"
 )
 
-var systemInstruction = `You are a careful name annotator. 
-For the given NAME, infer the most likely gender category
-from this set: ["male","female","unisex","unknown"].
-
-Rules:
-- Prefer "unisex" if the name is commonly used by multiple genders in any major locale.
-- Use "unknown" for initials, handles, company names, or if you are not confident.
-- Consider cultural/linguistic context broadly (e.g., Turkish, Arabic, Persian, Slavic, Western European).
-- Return STRICT JSON, no extra text.
-
-Schema:
-{"label":"<male|female|unisex|unknown>"}`
+func timestamp() string {
+	return time.Now().Format("06.01.02.15.04.05")
+}
 
 type Args struct {
 	Start, End, Batch int
@@ -40,8 +32,13 @@ type Question struct {
 	MemberNames []string `json:"member-names" jsonschema:"description=Claimed to be a human name"`
 }
 
+type LabeledName struct {
+	Name   string `json:"name" jsonschema:"description=Original name"`
+	Gender string `json:"gender" jsonschema:"enum=male,enum=female,enum=unisex,enum=unknown"`
+}
+
 type Answer struct {
-	Genders map[string]string `json:"genders" jsonschema:"description=A dictionary from member names to either of male, female, unisex or other"`
+	Items []LabeledName `json:"items" jsonschema:"description=Labels for each input name"`
 }
 
 type OutputFiles struct {
@@ -53,30 +50,14 @@ func percentage(current, total int) int {
 }
 
 var prompt = `
-You are a careful name annotator. For the given NAME, infer the most likely gender
-category from: ["male","female","unisex","unknown"].
+You are a careful name annotator. For each NAME in NAMES, output STRICT JSON:
+{"items":[{"name":"<original name>","gender":"<male|female|unisex|unknown>"}...]}
 
 Rules:
 - Prefer "unisex" if the name is commonly used by multiple genders in any major locale.
 - Use "unknown" for initials, handles, organization names, or if confidence is low.
 - Consider cultural/linguistic contexts (e.g., Turkish, Arabic, Persian, Slavic, Western European).
 - Return STRICT JSON and nothing else.
-
-Schema:
-{"label":"<male|female|unisex|unknown>"}
-
-EXAMPLE
-NAMES: ["mehmet","ayşe","alex","kim","özge","deniz","abc holdings"]
-OUTPUT: {
-"Mehmet":"male"
-"Ayşe":"female",
-"Alex":"unisex",
-"Kim":"unisex",
-"Özge":"female",
-"Deniz":"unisex",
-"ABC Holdings":"unknown"
-}
-END EXAMPLE
 
 NAMES: {{.}}
 `
@@ -113,9 +94,7 @@ func Main() error {
 			if err = t.Execute(prompt, names); err != nil {
 				return nil, fmt.Errorf("templating the prompt: %w", err)
 			}
-			s := prompt.String()
-			fmt.Println(s)
-			a, _, err := genkit.GenerateData[Answer](ctx, g, ai.WithPrompt(s))
+			a, _, err := genkit.GenerateData[Answer](ctx, g, ai.WithPrompt(prompt.String()))
 			if err != nil {
 				return nil, fmt.Errorf("genkit.GenerateData: %w", err)
 			}
@@ -133,13 +112,18 @@ func Main() error {
 		Female: nil,
 	}
 
-	o.Male, err = os.Create("labels/male.txt")
+	now := timestamp()
+	if err = os.Mkdir(filepath.Join("labels", now), 0700); err != nil {
+		return fmt.Errorf("mkdir: %w", err)
+	}
+
+	o.Male, err = os.Create(filepath.Join("labels", now, "male.txt"))
 	if err != nil {
 		return fmt.Errorf("create: %w", err)
 	}
 	defer o.Male.Close()
 
-	o.Female, err = os.Create("labels/female.txt")
+	o.Female, err = os.Create(filepath.Join("labels", now, "female.txt"))
 	if err != nil {
 		return fmt.Errorf("create: %w", err)
 	}
@@ -150,6 +134,9 @@ func Main() error {
 	batch := 0
 
 	defer func() {
+		if r := recover(); r != nil {
+			fmt.Println("recovered:", r)
+		}
 		fmt.Println("total :", included+excluded)
 		fmt.Println("incl. :", included)
 		fmt.Println("excl. :", excluded)
@@ -173,21 +160,21 @@ func Main() error {
 		}
 		a, err := flow.Run(context.Background(), q)
 		if err != nil {
-			log.Fatalf("flow.Run: %v", err)
+			return fmt.Errorf("flow.Run: %v", err)
 		}
 
-		for name, gender := range a.Genders {
-			switch gender {
+		for _, item := range a.Items {
+			switch item.Gender {
 			case "male":
-				fmt.Fprintln(o.Male, name)
+				fmt.Fprintln(o.Male, item.Name)
 				included += 1
 			case "female":
-				fmt.Fprintln(o.Female, name)
+				fmt.Fprintln(o.Female, item.Name)
 				included += 1
 			case "unisex", "unknown":
 				excluded += 1
 			default:
-				fmt.Printf("WARNING: unexpected answer from LLM: %q\n", gender)
+				fmt.Printf("WARNING: unexpected answer from LLM: %q for %q\n", item.Gender, item.Name)
 				excluded += 1
 			}
 		}
