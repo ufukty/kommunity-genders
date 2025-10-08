@@ -94,21 +94,21 @@ male_count, female_count, excluded_count, total, male_ratio, female_ratio
 
 ### Language/framework specific communities
 
-| Male:Female | Kommunity                                                                            | Last $n$ Members |
-| ----------- | ------------------------------------------------------------------------------------ | ---------------- |
-|             | [GoTurkiye](https://kommunity.com/goturkiye)                                         | 820              |
-|             | [Türkiye Java Community](https://kommunity.com/turkiye-java-community)               | 500              |
-|             | [Ankara Gophers](https://kommunity.com/ankara-gophers)                               | 460              |
-|             | [Istanbul PHP User Group](https://kommunity.com/istanbulphp)                         | 480              |
-|             | [DotNet Istanbul](https://kommunity.com/dotnet-istanbul)                             | 480              |
-|             | [Flutter Turkiye](https://kommunity.com/flutter-turkiye)                             | 460              |
-|             | [Istanbul JavaScript Topluluğu](https://kommunity.com/istanbul-javascript-toplulugu) | 500              |
-|             | [Swift Buddies](https://kommunity.com/swiftbuddies)                                  | 560              |
-|             | [Ruby Turkiye](https://kommunity.com/ruby-turkiye)                                   | 540              |
-|             | [TensorFlow Turkey](https://kommunity.com/tensorflow-turkey)                         | 540              |
-|             | [JS İzmir](https://kommunity.com/js-izmir)                                           | 391              |
-|             | [Spring Türkiye](https://kommunity.com/spring-turkiye)                               | 500              |
-|             | [React Turkiye](https://kommunity.com/reacttr)                                       | 460              |
+| Subject    | Male:Female | Kommunity                                                                            | Last $n$ Members | Subject maturity |
+| ---------- | ----------- | ------------------------------------------------------------------------------------ | ---------------- | ---------------- |
+| .Net       |             | [DotNet Istanbul](https://kommunity.com/dotnet-istanbul)                             | 480              |                  |
+| Flutter    |             | [Flutter Turkiye](https://kommunity.com/flutter-turkiye)                             | 460              |                  |
+| Go         |             | [Ankara Gophers](https://kommunity.com/ankara-gophers)                               | 460              |                  |
+| Go         |             | [GoTurkiye](https://kommunity.com/goturkiye)                                         | 820              |                  |
+| Java       |             | [Türkiye Java Community](https://kommunity.com/turkiye-java-community)               | 500              |                  |
+| JavaScript |             | [Istanbul JavaScript Topluluğu](https://kommunity.com/istanbul-javascript-toplulugu) | 500              |                  |
+| JavaScript |             | [JS İzmir](https://kommunity.com/js-izmir)                                           | 391              |                  |
+| PHP        |             | [Istanbul PHP User Group](https://kommunity.com/istanbulphp)                         | 480              |                  |
+| React      |             | [React Turkiye](https://kommunity.com/reacttr)                                       | 460              |                  |
+| Ruby       |             | [Ruby Turkiye](https://kommunity.com/ruby-turkiye)                                   | 540              |                  |
+| Spring     |             | [Spring Türkiye](https://kommunity.com/spring-turkiye)                               | 500              |                  |
+| Swift      |             | [Swift Buddies](https://kommunity.com/swiftbuddies)                                  | 560              |                  |
+| TensorFlow |             | [TensorFlow Turkey](https://kommunity.com/tensorflow-turkey)                         | 540              |                  |
 
 ### Tech focused communities
 
