@@ -24,7 +24,10 @@ Array.from(
 
 ## Categorization
 
-LLM generated script provided with name-only list of members and instructed to exclude unisex names. The script generated in the first community is provided as an example. Actual script for each community utilize different list of names.
+LLM generated script provided with name-only list of members and instructed to exclude unisex names. The script generated in the first community is provided as an example below. Actual script for each community utilize different list of names.
+
+<details>
+<summary>Expand for example script</summary>
 
 ```python
 from collections import Counter
@@ -72,6 +75,8 @@ female_ratio = female_count / total * 100 if total else 0
 
 male_count, female_count, excluded_count, total, male_ratio, female_ratio
 ```
+
+</details>
 
 ## Results
 
