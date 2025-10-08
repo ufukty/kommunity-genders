@@ -84,11 +84,19 @@ male_count, female_count, excluded_count, total, male_ratio, female_ratio
 
 ## Results
 
+### Language specific communities
+
+| Male:Female | Kommunity                                                              | Last $n$ Members |
+| ----------- | ---------------------------------------------------------------------- | ---------------- |
+| 4.0 : 1     | [GoTurkiye](https://kommunity.com/goturkiye)                           | 820              |
+| 5.2 : 1     | [Türkiye Java Community](https://kommunity.com/turkiye-java-community) | 500              |
+
+### Tech focused communities
+
 | Male:Female | Kommunity                                                           | Last $n$ Members |
 | ----------- | ------------------------------------------------------------------- | ---------------- |
 | 2.0 : 1     | [Trendyol Tech Meetup](https://kommunity.com/trendyol)              | 500              |
 | 2.0 : 1     | [Tech Istanbul](https://kommunity.com/techistanbul)                 | 1000             |
-| 4.0 : 1     | [GoTurkiye](https://kommunity.com/goturkiye)                        | 820              |
 | 4.5 : 1     | [Türkiye Açık Kaynak Platformu](https://kommunity.com/tracikkaynak) | 1000             |
 | 4.6 : 1     | [DevOpsTr](https://kommunity.com/devops-turkiye)                    | 1000             |
 | 4.7 : 1     | [DevNot](https://kommunity.com/devnot)                              | 999              |
