@@ -75,8 +75,9 @@ male_count, female_count, excluded_count, total, male_ratio, female_ratio
 
 ## Results
 
-| Kommunity                                                    | Last $n$ Members | Male:Female |
-| ------------------------------------------------------------ | ---------------- | ----------- |
-| [GoTurkiye](https://kommunity.com/goturkiye/members?page=41) | 820              | 4 : 1       |
-| [DevOpsTr](https://kommunity.com/devops-turkiye/members)     | 1000             | 4.6 : 1     |
-| [Tech Istanbul](https://kommunity.com/techistanbul/members)  | 1000             | 2 : 1       |
+| Male:Female | Kommunity                                           | Last $n$ Members |
+| ----------- | --------------------------------------------------- | ---------------- |
+| 2.0 : 1     | [Tech Istanbul](https://kommunity.com/techistanbul) | 1000             |
+| 4.0 : 1     | [GoTurkiye](https://kommunity.com/goturkiye)        | 820              |
+| 4.6 : 1     | [DevOpsTr](https://kommunity.com/devops-turkiye)    | 1000             |
+| 4.7 : 1     | [DevNot](https://kommunity.com/devnot)              | 999              |
