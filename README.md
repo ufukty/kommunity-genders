@@ -4,7 +4,7 @@ This projects aims to compare the male-to-female ratio among the language-specif
 
 ## Extracting member names
 
-The script only collects the first word from member names extracted from DOM loaded with the list of latest $n$ member. The $n$ is choosen near 1000 for all communities including with 10k members as sampling is considered safe for this application.
+The script only collects the first word from member names extracted from DOM loaded with the list of latest $n$ member. The $n$ is choosen near 1000 for all communities even for those with 10k members for protecting server resources as the change of ratio with time is out of scope of this project.
 
 ```js
 Array.from(
