@@ -94,10 +94,13 @@ male_count, female_count, excluded_count, total, male_ratio, female_ratio
 
 ### Language specific communities
 
-| Male:Female | Kommunity                                                              | Last $n$ Members |
-| ----------- | ---------------------------------------------------------------------- | ---------------- |
-| 4.0 : 1     | [GoTurkiye](https://kommunity.com/goturkiye)                           | 820              |
-| 5.2 : 1     | [Türkiye Java Community](https://kommunity.com/turkiye-java-community) | 500              |
+| Male:Female | Kommunity                                                                            | Last $n$ Members |
+| ----------- | ------------------------------------------------------------------------------------ | ---------------- |
+| 4.0 : 1     | [GoTurkiye](https://kommunity.com/goturkiye)                                         | 820              |
+| 5.2 : 1     | [Türkiye Java Community](https://kommunity.com/turkiye-java-community)               | 500              |
+|             | [Istanbul PHP User Group](https://kommunity.com/istanbulphp)                         | 480              |
+|             | [DotNet Istanbul](https://kommunity.com/dotnet-istanbul)                             | 480              |
+|             | [Istanbul JavaScript Topluluğu](https://kommunity.com/istanbul-javascript-toplulugu) | 500              |
 
 ### Tech focused communities
 
