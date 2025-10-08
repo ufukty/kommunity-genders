@@ -79,3 +79,4 @@ male_count, female_count, excluded_count, total, male_ratio, female_ratio
 | ------------------------------------------------------------ | ---------------- | ----------- |
 | [GoTurkiye](https://kommunity.com/goturkiye/members?page=41) | 820              | 4 : 1       |
 | [DevOpsTr](https://kommunity.com/devops-turkiye/members)     | 1000             | 4.6 : 1     |
+| [Tech Istanbul](https://kommunity.com/techistanbul/members)  | 1000             | 2 : 1       |
