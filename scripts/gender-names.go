@@ -125,7 +125,7 @@ func Main() error {
 
 		if pct2 := percentage(i, len(memberNames)); pct2 > pct {
 			pct = pct2
-			fmt.Printf("progress: %%d\n", pct)
+			fmt.Printf("progress: %%%d\n", pct)
 		}
 	}
 
