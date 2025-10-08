@@ -96,8 +96,8 @@ male_count, female_count, excluded_count, total, male_ratio, female_ratio
 
 | Male:Female | Kommunity                                                                            | Last $n$ Members |
 | ----------- | ------------------------------------------------------------------------------------ | ---------------- |
-| 4.0 : 1     | [GoTurkiye](https://kommunity.com/goturkiye)                                         | 820              |
-| 5.2 : 1     | [Türkiye Java Community](https://kommunity.com/turkiye-java-community)               | 500              |
+|             | [GoTurkiye](https://kommunity.com/goturkiye)                                         | 820              |
+|             | [Türkiye Java Community](https://kommunity.com/turkiye-java-community)               | 500              |
 |             | [Ankara Gophers](https://kommunity.com/ankara-gophers)                               | 460              |
 |             | [Istanbul PHP User Group](https://kommunity.com/istanbulphp)                         | 480              |
 |             | [DotNet Istanbul](https://kommunity.com/dotnet-istanbul)                             | 480              |
@@ -114,11 +114,11 @@ male_count, female_count, excluded_count, total, male_ratio, female_ratio
 
 | Male:Female | Kommunity                                                                                            | Last $n$ Members |
 | ----------- | ---------------------------------------------------------------------------------------------------- | ---------------- |
-| 1.0 : 1     | [Teknopark Istanbul](https://kommunity.com/teknopark-istanbul-yazilimci-bulusmalari/members?page=25) | 499              |
-| 1.0 : 1     | [Kadın Yazılımcı](https://kommunity.com/kadinyazilimci)                                              | 500              |
-| 1.0 : 1     | [SistersLab](https://kommunity.com/sisterslaborg)                                                    | 500              |
-| 2.0 : 1     | [Trendyol Tech Meetup](https://kommunity.com/trendyol)                                               | 500              |
-| 2.0 : 1     | [Tech Istanbul](https://kommunity.com/techistanbul)                                                  | 1000             |
-| 4.5 : 1     | [Türkiye Açık Kaynak Platformu](https://kommunity.com/tracikkaynak)                                  | 1000             |
-| 4.6 : 1     | [DevOpsTr](https://kommunity.com/devops-turkiye)                                                     | 1000             |
-| 4.7 : 1     | [DevNot](https://kommunity.com/devnot)                                                               | 999              |
+|             | [Teknopark Istanbul](https://kommunity.com/teknopark-istanbul-yazilimci-bulusmalari/members?page=25) | 499              |
+|             | [Kadın Yazılımcı](https://kommunity.com/kadinyazilimci)                                              | 500              |
+|             | [SistersLab](https://kommunity.com/sisterslaborg)                                                    | 500              |
+|             | [Trendyol Tech Meetup](https://kommunity.com/trendyol)                                               | 500              |
+|             | [Tech Istanbul](https://kommunity.com/techistanbul)                                                  | 1000             |
+|             | [Türkiye Açık Kaynak Platformu](https://kommunity.com/tracikkaynak)                                  | 1000             |
+|             | [DevOpsTr](https://kommunity.com/devops-turkiye)                                                     | 1000             |
+|             | [DevNot](https://kommunity.com/devnot)                                                               | 999              |
