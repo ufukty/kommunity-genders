@@ -26,6 +26,14 @@ Array.from(
   .join("\n");
 ```
 
+## Name categorization
+
+Lowercase combined list of member names are filtered for unique entries and supplied to an LLM for unisex-excluding classification.
+
+```sh
+cat data/* | tr '[:upper:]' '[:lower:]' | sort | uniq
+```
+
 ## Categorization
 
 LLM generated script provided with name-only list of members and instructed to exclude unisex names. The script generated in the first community is provided as an example below. Actual script for each community utilize different list of names.
