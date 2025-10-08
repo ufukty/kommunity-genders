@@ -90,7 +90,7 @@ male_count, female_count, excluded_count, total, male_ratio, female_ratio
 
 </details>
 
-## Results
+## Measurements
 
 ### Language/framework specific communities
 
