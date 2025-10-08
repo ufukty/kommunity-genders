@@ -2,6 +2,10 @@
 
 This projects aims to compare the male-to-female ratio among the both language and tech specific communities in Turkiye.
 
+## Motivation
+
+This project has been started with the intention of investigating the correlation between M:F ratio and language maturity.
+
 ## Extracting member names
 
 The script only collects the first word from member names extracted from DOM loaded with the list of latest $n$ member. The $n$ is choosen near 1000 for all communities even for those with 10k members for protecting server resources as the change of ratio with time is out of scope of this project.
@@ -80,9 +84,10 @@ male_count, female_count, excluded_count, total, male_ratio, female_ratio
 
 ## Results
 
-| Male:Female | Kommunity                                           | Last $n$ Members |
-| ----------- | --------------------------------------------------- | ---------------- |
-| 2.0 : 1     | [Tech Istanbul](https://kommunity.com/techistanbul) | 1000             |
-| 4.0 : 1     | [GoTurkiye](https://kommunity.com/goturkiye)        | 820              |
-| 4.6 : 1     | [DevOpsTr](https://kommunity.com/devops-turkiye)    | 1000             |
-| 4.7 : 1     | [DevNot](https://kommunity.com/devnot)              | 999              |
+| Male:Female | Kommunity                                            | Last $n$ Members |
+| ----------- | ---------------------------------------------------- | ---------------- |
+| 2.0 : 1     | [Tech Istanbul](https://kommunity.com/techistanbul)  | 1000             |
+| 4.0 : 1     | [GoTurkiye](https://kommunity.com/goturkiye)         | 820              |
+| 4.6 : 1     | [DevOpsTr](https://kommunity.com/devops-turkiye)     | 1000             |
+| 4.7 : 1     | [DevNot](https://kommunity.com/devnot)               | 999              |
+| 4.7 : 1     | [Tr Açık Kaynak](https://kommunity.com/tracikkaynak) | 1000             |
