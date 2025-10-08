@@ -46,7 +46,7 @@ type OutputFiles struct {
 }
 
 func percentage(current, total int) int {
-	return int(float64(current) / float64(total))
+	return int(100 * float64(current) / float64(total))
 }
 
 var prompt = `
