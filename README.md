@@ -103,14 +103,22 @@ male_count, female_count, excluded_count, total, male_ratio, female_ratio
 |             | [DotNet Istanbul](https://kommunity.com/dotnet-istanbul)                             | 480              |
 |             | [Flutter Turkiye](https://kommunity.com/flutter-turkiye)                             | 460              |
 |             | [Istanbul JavaScript Topluluğu](https://kommunity.com/istanbul-javascript-toplulugu) | 500              |
+|             | [Swift Buddies](https://kommunity.com/swiftbuddies)                                  | 560              |
+|             | [Ruby Turkiye](https://kommunity.com/ruby-turkiye)                                   | 540              |
+|             | [TensorFlow Turkey](https://kommunity.com/tensorflow-turkey)                         | 540              |
+|             | [JS İzmir](https://kommunity.com/js-izmir)                                           | 391              |
+|             | [Spring Türkiye](https://kommunity.com/spring-turkiye)                               | 500              |
+|             | [React Turkiye](https://kommunity.com/reacttr)                                       | 460              |
 
 ### Tech focused communities
 
-| Male:Female | Kommunity                                                           | Last $n$ Members |
-| ----------- | ------------------------------------------------------------------- | ---------------- |
-| 1.0 : 1     | [Kadın Yazılımcı](https://kommunity.com/kadinyazilimci)             | 500              |
-| 2.0 : 1     | [Trendyol Tech Meetup](https://kommunity.com/trendyol)              | 500              |
-| 2.0 : 1     | [Tech Istanbul](https://kommunity.com/techistanbul)                 | 1000             |
-| 4.5 : 1     | [Türkiye Açık Kaynak Platformu](https://kommunity.com/tracikkaynak) | 1000             |
-| 4.6 : 1     | [DevOpsTr](https://kommunity.com/devops-turkiye)                    | 1000             |
-| 4.7 : 1     | [DevNot](https://kommunity.com/devnot)                              | 999              |
+| Male:Female | Kommunity                                                                                            | Last $n$ Members |
+| ----------- | ---------------------------------------------------------------------------------------------------- | ---------------- |
+| 1.0 : 1     | [Teknopark Istanbul](https://kommunity.com/teknopark-istanbul-yazilimci-bulusmalari/members?page=25) | 499              |
+| 1.0 : 1     | [Kadın Yazılımcı](https://kommunity.com/kadinyazilimci)                                              | 500              |
+| 1.0 : 1     | [SistersLab](https://kommunity.com/sisterslaborg)                                                    | 500              |
+| 2.0 : 1     | [Trendyol Tech Meetup](https://kommunity.com/trendyol)                                               | 500              |
+| 2.0 : 1     | [Tech Istanbul](https://kommunity.com/techistanbul)                                                  | 1000             |
+| 4.5 : 1     | [Türkiye Açık Kaynak Platformu](https://kommunity.com/tracikkaynak)                                  | 1000             |
+| 4.6 : 1     | [DevOpsTr](https://kommunity.com/devops-turkiye)                                                     | 1000             |
+| 4.7 : 1     | [DevNot](https://kommunity.com/devnot)                                                               | 999              |
