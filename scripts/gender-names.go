@@ -98,7 +98,7 @@ func Main() error {
 		args.End = len(memberNames)
 	}
 	memberNames = memberNames[args.Start:args.End]
-	pct := 0
+	pct := -1
 
 	for i, memberName := range memberNames {
 		q := &Question{
@@ -125,7 +125,7 @@ func Main() error {
 
 		if pct2 := percentage(i, len(memberNames)); pct2 > pct {
 			pct = pct2
-			fmt.Printf("progress: %d\n", pct)
+			fmt.Printf("progress: %%d\n", pct)
 		}
 	}
 
