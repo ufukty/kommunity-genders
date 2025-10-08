@@ -3,6 +3,7 @@
 package main
 
 import (
+	"bytes"
 	"context"
 	"encoding/json"
 	"flag"
@@ -11,11 +12,25 @@ import (
 	"log"
 	"os"
 	"strings"
+	"text/template"
 
 	"github.com/firebase/genkit/go/ai"
 	"github.com/firebase/genkit/go/genkit"
 	"github.com/firebase/genkit/go/plugins/googlegenai"
 )
+
+var systemInstruction = `You are a careful name annotator. 
+For the given NAME, infer the most likely gender category
+from this set: ["male","female","unisex","unknown"].
+
+Rules:
+- Prefer "unisex" if the name is commonly used by multiple genders in any major locale.
+- Use "unknown" for initials, handles, company names, or if you are not confident.
+- Consider cultural/linguistic context broadly (e.g., Turkish, Arabic, Persian, Slavic, Western European).
+- Return STRICT JSON, no extra text.
+
+Schema:
+{"label":"<male|female|unisex|unknown>"}`
 
 type Args struct {
 	Start, End, Batch int
@@ -37,12 +52,46 @@ func percentage(current, total int) int {
 	return int(float64(current) / float64(total))
 }
 
+var prompt = `
+You are a careful name annotator. For the given NAME, infer the most likely gender
+category from: ["male","female","unisex","unknown"].
+
+Rules:
+- Prefer "unisex" if the name is commonly used by multiple genders in any major locale.
+- Use "unknown" for initials, handles, organization names, or if confidence is low.
+- Consider cultural/linguistic contexts (e.g., Turkish, Arabic, Persian, Slavic, Western European).
+- Return STRICT JSON and nothing else.
+
+Schema:
+{"label":"<male|female|unisex|unknown>"}
+
+EXAMPLE
+NAMES: ["mehmet","ayşe","alex","kim","özge","deniz","abc holdings"]
+OUTPUT: {
+"Mehmet":"male"
+"Ayşe":"female",
+"Alex":"unisex",
+"Kim":"unisex",
+"Özge":"female",
+"Deniz":"unisex",
+"ABC Holdings":"unknown"
+}
+END EXAMPLE
+
+NAMES: {{.}}
+`
+
 func Main() error {
 	args := Args{}
 	flag.IntVar(&args.Start, "start", 0, "start index")
 	flag.IntVar(&args.End, "end", -1, "start index")
 	flag.IntVar(&args.Batch, "batch", 10, "batch")
 	flag.Parse()
+
+	t, err := template.New("").Parse(prompt)
+	if err != nil {
+		return fmt.Errorf("parsing prompt template: %w", err)
+	}
 
 	api := &googlegenai.GoogleAI{
 		APIKey: os.Getenv("GEMINI_API_KEY"),
@@ -56,12 +105,17 @@ func Main() error {
 
 	flow := genkit.DefineFlow(g, "AnswerGeneratorFlow",
 		func(ctx context.Context, q *Question) (*Answer, error) {
-			j, err := json.Marshal(q.MemberNames)
-			if err != nil {
+			names := bytes.NewBuffer([]byte{})
+			if err := json.NewEncoder(names).Encode(q.MemberNames); err != nil {
 				return nil, fmt.Errorf("encoding question into json: %w", err)
 			}
-			p := fmt.Sprintf(`Create an Answer with the following requirements: Member Names: %s`, j)
-			a, _, err := genkit.GenerateData[Answer](ctx, g, ai.WithPrompt(p))
+			prompt := bytes.NewBufferString("")
+			if err = t.Execute(prompt, names); err != nil {
+				return nil, fmt.Errorf("templating the prompt: %w", err)
+			}
+			s := prompt.String()
+			fmt.Println(s)
+			a, _, err := genkit.GenerateData[Answer](ctx, g, ai.WithPrompt(s))
 			if err != nil {
 				return nil, fmt.Errorf("genkit.GenerateData: %w", err)
 			}
@@ -130,7 +184,7 @@ func Main() error {
 			case "female":
 				fmt.Fprintln(o.Female, name)
 				included += 1
-			case "unisex", "other":
+			case "unisex", "unknown":
 				excluded += 1
 			default:
 				fmt.Printf("WARNING: unexpected answer from LLM: %q\n", gender)
