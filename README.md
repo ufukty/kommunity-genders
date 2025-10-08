@@ -103,6 +103,7 @@ male_count, female_count, excluded_count, total, male_ratio, female_ratio
 
 | Male:Female | Kommunity                                                           | Last $n$ Members |
 | ----------- | ------------------------------------------------------------------- | ---------------- |
+| 1.0 : 1     | [Kadın Yazılımcı](https://kommunity.com/kadinyazilimci)             | 500              |
 | 2.0 : 1     | [Trendyol Tech Meetup](https://kommunity.com/trendyol)              | 500              |
 | 2.0 : 1     | [Tech Istanbul](https://kommunity.com/techistanbul)                 | 1000             |
 | 4.5 : 1     | [Türkiye Açık Kaynak Platformu](https://kommunity.com/tracikkaynak) | 1000             |
