@@ -96,3 +96,6 @@ This table shows the measurements for non-language specific communities. As this
 | Flutter    | 3,2         | 7              | 0,45                 |
 | React      | 5,4         | 12             | 0,45                 |
 
+## Visualization
+
+![](export/figure.png)
