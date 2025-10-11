@@ -66,6 +66,7 @@ done > stats.txt
 | TensorFlow | 3.2 : 1     | [TensorFlow Turkey](https://kommunity.com/tensorflow-turkey)                         | 499              |
 
 ### Tech focused communities
+This table shows the measurements for non-language specific communities. As this is out-of-scope, the table is shared just for showing the situation in wider landscape.
 
 | Male:Female | Kommunity                                                                            | Last $n$ Members |
 | ----------- | ------------------------------------------------------------------------------------ | ---------------- |
