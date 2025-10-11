@@ -51,21 +51,22 @@ done > stats.txt
 
 | Subject    | Male:Female | Kommunity                                                                            | Last $n$ Members |
 | ---------- | ----------- | ------------------------------------------------------------------------------------ | ---------------- |
-| .Net       | 5.7 : 1     | [DotNet Istanbul](https://kommunity.com/dotnet-istanbul)                             | 479              |
 | Flutter    | 3.2 : 1     | [Flutter Turkiye](https://kommunity.com/flutter-turkiye)                             | 459              |
-| Go         | 4.7 : 1     | [Ankara Gophers](https://kommunity.com/ankara-gophers)                               | 459              |
-| Go         | 4.3 : 1     | [GoTurkiye](https://kommunity.com/goturkiye)                                         | 819              |
 | Java       | 3.2 : 1     | [Türkiye Java Community](https://kommunity.com/turkiye-java-community)               | 499              |
 | JavaScript | 3.2 : 1     | [Istanbul JavaScript Topluluğu](https://kommunity.com/istanbul-javascript-toplulugu) | 499              |
+| TensorFlow | 3.2 : 1     | [TensorFlow Turkey](https://kommunity.com/tensorflow-turkey)                         | 499              |
+| Go         | 4.3 : 1     | [GoTurkiye](https://kommunity.com/goturkiye)                                         | 819              |
 | JavaScript | 4.4 : 1     | [JS İzmir](https://kommunity.com/js-izmir)                                           | 390              |
-| PHP        | 5.5 : 1     | [Istanbul PHP User Group](https://kommunity.com/istanbulphp)                         | 479              |
+| Swift      | 4.5 : 1     | [Swift Buddies](https://kommunity.com/swiftbuddies)                                  | 559              |
+| Go         | 4.7 : 1     | [Ankara Gophers](https://kommunity.com/ankara-gophers)                               | 459              |
+| Spring     | 4.8 : 1     | [Spring Türkiye](https://kommunity.com/spring-turkiye)                               | 499              |
 | React      | 5.4 : 1     | [React Turkiye](https://kommunity.com/reacttr)                                       | 459              |
 | Ruby       | 5.4 : 1     | [Ruby Turkiye](https://kommunity.com/ruby-turkiye)                                   | 539              |
-| Spring     | 4.8 : 1     | [Spring Türkiye](https://kommunity.com/spring-turkiye)                               | 499              |
-| Swift      | 4.5 : 1     | [Swift Buddies](https://kommunity.com/swiftbuddies)                                  | 559              |
-| TensorFlow | 3.2 : 1     | [TensorFlow Turkey](https://kommunity.com/tensorflow-turkey)                         | 499              |
+| PHP        | 5.5 : 1     | [Istanbul PHP User Group](https://kommunity.com/istanbulphp)                         | 479              |
+| .Net       | 5.7 : 1     | [DotNet Istanbul](https://kommunity.com/dotnet-istanbul)                             | 479              |
 
 ### Tech focused communities
+
 This table shows the measurements for non-language specific communities. As this is out-of-scope, the table is shared just for showing the situation in wider landscape.
 
 | Male:Female | Kommunity                                                                            | Last $n$ Members |
