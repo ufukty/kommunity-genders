@@ -1,4 +1,4 @@
-# Latest gender ratios among the top Turkish Kommunities
+# Comparing masculinity-to-maturity ratios of top Turkish Programming Language Kommunities
 
 This projects aims to compare the male-to-female ratio among the both language and tech specific communities in Turkiye.
 
