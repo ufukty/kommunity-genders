@@ -49,21 +49,21 @@ done > stats.txt
 
 ### Language/framework specific communities
 
-| Subject    | Male:Female | Kommunity                                                                            | Last $n$ Members |
-| ---------- | ----------- | ------------------------------------------------------------------------------------ | ---------------- |
-| Flutter    | 3.2 : 1     | [Flutter Turkiye](https://kommunity.com/flutter-turkiye)                             | 459              |
-| Java       | 3.2 : 1     | [Türkiye Java Community](https://kommunity.com/turkiye-java-community)               | 499              |
-| JavaScript | 3.2 : 1     | [Istanbul JavaScript Topluluğu](https://kommunity.com/istanbul-javascript-toplulugu) | 499              |
-| TensorFlow | 3.2 : 1     | [TensorFlow Turkey](https://kommunity.com/tensorflow-turkey)                         | 499              |
-| Go         | 4.3 : 1     | [GoTurkiye](https://kommunity.com/goturkiye)                                         | 819              |
-| JavaScript | 4.4 : 1     | [JS İzmir](https://kommunity.com/js-izmir)                                           | 390              |
-| Swift      | 4.5 : 1     | [Swift Buddies](https://kommunity.com/swiftbuddies)                                  | 559              |
-| Go         | 4.7 : 1     | [Ankara Gophers](https://kommunity.com/ankara-gophers)                               | 459              |
-| Spring     | 4.8 : 1     | [Spring Türkiye](https://kommunity.com/spring-turkiye)                               | 499              |
-| React      | 5.4 : 1     | [React Turkiye](https://kommunity.com/reacttr)                                       | 459              |
-| Ruby       | 5.4 : 1     | [Ruby Turkiye](https://kommunity.com/ruby-turkiye)                                   | 539              |
-| PHP        | 5.5 : 1     | [Istanbul PHP User Group](https://kommunity.com/istanbulphp)                         | 479              |
-| .Net       | 5.7 : 1     | [DotNet Istanbul](https://kommunity.com/dotnet-istanbul)                             | 479              |
+| Kommunity                                                                            | Last $n$ Members | Male:Female |
+| ------------------------------------------------------------------------------------ | ---------------- | ----------- |
+| [Flutter Turkiye](https://kommunity.com/flutter-turkiye)                             | 459              | 3.2 : 1     |
+| [Türkiye Java Community](https://kommunity.com/turkiye-java-community)               | 499              | 3.2 : 1     |
+| [Istanbul JavaScript Topluluğu](https://kommunity.com/istanbul-javascript-toplulugu) | 499              | 3.2 : 1     |
+| [TensorFlow Turkey](https://kommunity.com/tensorflow-turkey)                         | 499              | 3.2 : 1     |
+| [GoTurkiye](https://kommunity.com/goturkiye)                                         | 819              | 4.3 : 1     |
+| [JS İzmir](https://kommunity.com/js-izmir)                                           | 390              | 4.4 : 1     |
+| [Swift Buddies](https://kommunity.com/swiftbuddies)                                  | 559              | 4.5 : 1     |
+| [Ankara Gophers](https://kommunity.com/ankara-gophers)                               | 459              | 4.7 : 1     |
+| [Spring Türkiye](https://kommunity.com/spring-turkiye)                               | 499              | 4.8 : 1     |
+| [React Turkiye](https://kommunity.com/reacttr)                                       | 459              | 5.4 : 1     |
+| [Ruby Turkiye](https://kommunity.com/ruby-turkiye)                                   | 539              | 5.4 : 1     |
+| [Istanbul PHP User Group](https://kommunity.com/istanbulphp)                         | 479              | 5.5 : 1     |
+| [DotNet Istanbul](https://kommunity.com/dotnet-istanbul)                             | 479              | 5.7 : 1     |
 
 ### Tech focused communities
 
