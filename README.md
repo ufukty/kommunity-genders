@@ -69,16 +69,16 @@ done > stats.txt
 
 This table shows the measurements for non-language specific communities. As this is out-of-scope, the table is shared just for showing the situation in wider landscape.
 
-| Male:Female | Kommunity                                                                            | Last $n$ Members |
-| ----------- | ------------------------------------------------------------------------------------ | ---------------- |
-| 1 : 0.4     | [SistersLab](https://kommunity.com/sisterslaborg)                                    | 499              |
-| 1 : 0.8     | [Kadın Yazılımcı](https://kommunity.com/kadinyazilimci)                              | 499              |
-| 1.3 : 1     | [Tech Istanbul](https://kommunity.com/techistanbul)                                  | 999              |
-| 1.5 : 1     | [Trendyol Tech Meetup](https://kommunity.com/trendyol)                               | 499              |
-| 3.1 : 1     | [Türkiye Açık Kaynak Platformu](https://kommunity.com/tracikkaynak)                  | 999              |
-| 3.3 : 1     | [Teknopark Istanbul](https://kommunity.com/teknopark-istanbul-yazilimci-bulusmalari) | 498              |
-| 3.4 : 1     | [DevNot](https://kommunity.com/devnot)                                               | 998              |
-| 3.4 : 1     | [DevOpsTr](https://kommunity.com/devops-turkiye)                                     | 999              |
+| Kommunity                                                                            | Last $n$ Members | Male:Female |
+| ------------------------------------------------------------------------------------ | ---------------- | ----------- |
+| [SistersLab](https://kommunity.com/sisterslaborg)                                    | 499              | 1 : 0.4     |
+| [Kadın Yazılımcı](https://kommunity.com/kadinyazilimci)                              | 499              | 1 : 0.8     |
+| [Tech Istanbul](https://kommunity.com/techistanbul)                                  | 999              | 1.3 : 1     |
+| [Trendyol Tech Meetup](https://kommunity.com/trendyol)                               | 499              | 1.5 : 1     |
+| [Türkiye Açık Kaynak Platformu](https://kommunity.com/tracikkaynak)                  | 999              | 3.1 : 1     |
+| [Teknopark Istanbul](https://kommunity.com/teknopark-istanbul-yazilimci-bulusmalari) | 498              | 3.3 : 1     |
+| [DevNot](https://kommunity.com/devnot)                                               | 998              | 3.4 : 1     |
+| [DevOpsTr](https://kommunity.com/devops-turkiye)                                     | 999              | 3.4 : 1     |
 
 ## Comparison
 
