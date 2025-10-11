@@ -150,10 +150,10 @@ func Main() error {
 	}
 	memberNames = memberNames[args.Start:args.End]
 
-	for b := 0; b*args.Batch < len(memberNames); b++ {
+	for batch = 0; batch*args.Batch < len(memberNames); batch++ {
 		var (
-			from = min(len(memberNames), args.Batch*(b))
-			to   = min(len(memberNames), args.Batch*(b+1))
+			from = min(len(memberNames), args.Batch*(batch))
+			to   = min(len(memberNames), args.Batch*(batch+1))
 		)
 		q := &Question{
 			MemberNames: memberNames[from:to],
