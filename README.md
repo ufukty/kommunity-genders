@@ -78,18 +78,19 @@ done > stats.txt
 | 3.4 : 1     | [DevNot](https://kommunity.com/devnot)                                               | 998              |
 | 3.4 : 1     | [DevOpsTr](https://kommunity.com/devops-turkiye)                                     | 999              |
 
-## Calculations
+## Comparison
 
-| Male:Female | Subject    | Maturity (Initial release)              |
-| ----------- | ---------- | --------------------------------------- |
-| 3.2 : 1     | Flutter    | ~7 years (2018 (stable))                |
-| 3.2 : 1     | Java       | ~30 years (1995)                        |
-| 3.2 : 1     | TensorFlow | ~10 years (2015 (public release))       |
-| 3.6 : 1     | JavaScript | ~30 years (1995)                        |
-| 4.4 : 1     | Go         | ~16 years (2009)                        |
-| 4.5 : 1     | Swift      | ~11 years (2014)                        |
-| 4.8 : 1     | Spring     | ~23 years (2002 (Spring Framework 1.0)) |
-| 5.4 : 1     | React      | ~12 years (2013)                        |
-| 5.4 : 1     | Ruby       | ~30 years (1995)                        |
-| 5.5 : 1     | PHP        | ~30 years (1995)                        |
-| 5.7 : 1     | .Net       | ~23 years (2002)                        |
+| Subject    | Masculinity | Maturity (yrs) | Masculinity/Maturity |
+| ---------- | ----------- | -------------- | -------------------- |
+| Java       | 3,2         | 30             | 0,10                 |
+| JavaScript | 3,6         | 30             | 0,12                 |
+| PHP        | 5,5         | 30             | 0,18                 |
+| Ruby       | 5,4         | 30             | 0,18                 |
+| Spring     | 4,8         | 23             | 0,20                 |
+| .Net       | 5,7         | 23             | 0,24                 |
+| Go         | 4,4         | 16             | 0,27                 |
+| TensorFlow | 3,2         | 10             | 0,32                 |
+| Swift      | 4,5         | 11             | 0,40                 |
+| Flutter    | 3,2         | 7              | 0,45                 |
+| React      | 5,4         | 12             | 0,45                 |
+
