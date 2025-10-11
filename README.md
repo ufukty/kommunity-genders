@@ -69,14 +69,14 @@ done > stats.txt
 
 | Male:Female | Kommunity                                                                            | Last $n$ Members |
 | ----------- | ------------------------------------------------------------------------------------ | ---------------- |
-| 3.3 : 1     | [Teknopark Istanbul](https://kommunity.com/teknopark-istanbul-yazilimci-bulusmalari) | 498              |
-| 1 : 0.8     | [Kadın Yazılımcı](https://kommunity.com/kadinyazilimci)                              | 499              |
 | 1 : 0.4     | [SistersLab](https://kommunity.com/sisterslaborg)                                    | 499              |
-| 1.5 : 1     | [Trendyol Tech Meetup](https://kommunity.com/trendyol)                               | 499              |
+| 1 : 0.8     | [Kadın Yazılımcı](https://kommunity.com/kadinyazilimci)                              | 499              |
 | 1.3 : 1     | [Tech Istanbul](https://kommunity.com/techistanbul)                                  | 999              |
+| 1.5 : 1     | [Trendyol Tech Meetup](https://kommunity.com/trendyol)                               | 499              |
 | 3.1 : 1     | [Türkiye Açık Kaynak Platformu](https://kommunity.com/tracikkaynak)                  | 999              |
-| 3.4 : 1     | [DevOpsTr](https://kommunity.com/devops-turkiye)                                     | 999              |
+| 3.3 : 1     | [Teknopark Istanbul](https://kommunity.com/teknopark-istanbul-yazilimci-bulusmalari) | 498              |
 | 3.4 : 1     | [DevNot](https://kommunity.com/devnot)                                               | 998              |
+| 3.4 : 1     | [DevOpsTr](https://kommunity.com/devops-turkiye)                                     | 999              |
 
 ## Calculations
 
