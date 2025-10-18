@@ -71,8 +71,8 @@ This table shows the measurements for non-language specific communities. As this
 
 | Kommunity                                                                            | Last $n$ Members | Male:Female |
 | ------------------------------------------------------------------------------------ | ---------------- | ----------- |
-| [SistersLab](https://kommunity.com/sisterslaborg)                                    | 499              | 1 : 0.4     |
-| [Kadın Yazılımcı](https://kommunity.com/kadinyazilimci)                              | 499              | 1 : 0.8     |
+| [SistersLab](https://kommunity.com/sisterslaborg)                                    | 499              | 1 : 2.3     |
+| [Kadın Yazılımcı](https://kommunity.com/kadinyazilimci)                              | 499              | 1 : 1.2     |
 | [Tech Istanbul](https://kommunity.com/techistanbul)                                  | 999              | 1.3 : 1     |
 | [Trendyol Tech Meetup](https://kommunity.com/trendyol)                               | 499              | 1.5 : 1     |
 | [Türkiye Açık Kaynak Platformu](https://kommunity.com/tracikkaynak)                  | 999              | 3.1 : 1     |
