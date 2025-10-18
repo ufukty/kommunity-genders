@@ -1,6 +1,12 @@
 import argparse
+
 parser = argparse.ArgumentParser(description="Example of flag parsing")
-parser.add_argument("--input", type=str, required=True, help="Path to the file contains newline separated list of member names")
+parser.add_argument(
+    "--input",
+    type=str,
+    required=True,
+    help="Path to the file contains newline separated list of member names",
+)
 args = parser.parse_args()
 
 with open(args.input, "r") as file:
@@ -20,14 +26,14 @@ count_excluded = 0
 
 for name in names:
     if name in labels_female:
-        count_females +=1
+        count_females += 1
     elif name in labels_male:
-        count_males +=1
+        count_males += 1
     else:
-        print("excluded name:", name,file=sys.stderr)
+        print("excluded name:", name, file=sys.stderr)
         count_excluded += 1
 
-count_accounted = count_males+count_females
+count_accounted = count_males + count_females
 ratio_females = int(count_females / count_accounted * 100)
 ratio_males = 100 - ratio_females
 
