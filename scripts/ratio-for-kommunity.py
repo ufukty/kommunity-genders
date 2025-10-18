@@ -37,6 +37,6 @@ print("ratio_males:", ratio_males, file=sys.stderr)
 print("ratio_females:", ratio_females, file=sys.stderr)
 
 if count_females > count_males:
-    print("1 : {}".format(int(count_males / count_females * 10) / 10))
+    print("1 : {}".format(int(count_females / count_males * 10) / 10))
 else:
     print("{} : 1".format(int(count_males / count_females * 10) / 10))
